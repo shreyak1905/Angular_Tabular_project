@@ -1,0 +1,23 @@
+<div class="container">
+
+    <table class="table table-bordered table-hover  ">
+        <thead style="color: white;background-color: rgb(34, 34, 122);">
+            <tr>
+                <th class="text-center">Id</th>
+                <th class="text-center">Name</th>
+                <th class="text-center">Email</th>
+                <th class="text-center">Avatar</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let i of userData">
+                <td class="text-center">{{i.id}}</td>
+                <td class="text-center">{{i.first_name}}{{i.last_name}}</td>
+                <td class="text-center">{{i.email}}</td>
+                <td class="text-center"><img src={{i.avatar}} ></td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
